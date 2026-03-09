@@ -1,0 +1,32 @@
+{
+  "name": "@cloud-latitude/mcp-server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Cloud Latitude MCP server — raffle info, booking, report, and protocol discovery tools for Google Cloud Next 2026",
+  "main": "server.js",
+  "bin": {
+    "cloud-latitude-mcp": "./server.js"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.25.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cloud-latitude",
+    "google-cloud-next",
+    "raffle",
+    "ai-agent",
+    "a2a"
+  ],
+  "author": "Cloud Latitude <hello@cloudlatitude.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloud-latitude/cloud-latitude-mcp"
+  }
+}

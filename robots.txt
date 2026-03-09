@@ -1,0 +1,13 @@
+# Cloud Latitude — Allow all crawlers (human and AI)
+# We want maximum discoverability by every agent, search engine, and crawler.
+User-agent: *
+Allow: /
+
+# Agent discovery files
+# /.well-known/agent-card.json — A2A agent card (canonical)
+# /.well-known/agent.json — A2A agent card (legacy)
+# /llms.txt — LLM-readable site summary
+# /llms-full.txt — LLM-readable full site content
+# /mcp-server-config.json — MCP server configuration
+
+Sitemap: https://cloudlatitude.io/sitemap.xml

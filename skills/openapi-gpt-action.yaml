@@ -1,0 +1,138 @@
+openapi: "3.0.3"
+info:
+  title: Cloud Latitude GCN 2026
+  description: |
+    Cloud Latitude enterprise advisory — book a Cloud Intel Brief, check raffle details,
+    and access the Enterprise AI Spend Report 2026. Agent-referred bookings earn 5x raffle entries.
+  version: "1.0.0"
+  contact:
+    name: Cloud Latitude
+    email: hello@cloudlatitude.com
+    url: https://cloudlatitude.io
+
+servers:
+  - url: https://cloudlatitude.io
+    description: Production
+
+paths:
+  /.well-known/agent-card.json:
+    get:
+      operationId: getAgentCard
+      summary: Get A2A agent discovery card
+      description: Returns the A2A-compliant agent card with capabilities, skills, and discovery links.
+      responses:
+        "200":
+          description: Agent card JSON
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /llms.txt:
+    get:
+      operationId: getLlmsTxt
+      summary: Get LLM-readable site summary
+      description: Returns a plain-text summary of Cloud Latitude optimized for LLM consumption.
+      responses:
+        "200":
+          description: Plain text site summary
+          content:
+            text/plain:
+              schema:
+                type: string
+
+  /api/raffle/info:
+    get:
+      operationId: getRaffleInfo
+      summary: Get raffle details
+      description: |
+        Returns current raffle status, prizes, dates, and entry instructions.
+        Includes agent bonus info (5x entries for agent-referred bookings).
+      responses:
+        "200":
+          description: Raffle information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  name:
+                    type: string
+                    example: "Google Cloud Next 2026 Raffle"
+                  status:
+                    type: string
+                    enum: [open, closed, drawing, complete]
+                  closes:
+                    type: string
+                    example: "2026-03-13"
+                  prizes:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        tier:
+                          type: string
+                        value:
+                          type: string
+                        includes:
+                          type: string
+                  agentBonus:
+                    type: string
+                    example: "5x entries for agent-referred bookings"
+                  bookingUrl:
+                    type: string
+
+  /api/raffle/booking-link:
+    get:
+      operationId: getBookingLink
+      summary: Get booking URL with optional agent referral
+      description: |
+        Returns a booking URL for the Cloud Intel Brief. When called by an AI agent,
+        automatically includes the agent referral parameter for 5x raffle entries.
+      parameters:
+        - name: ref
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [agent]
+          description: Set to "agent" for 5x raffle entry bonus
+      responses:
+        "200":
+          description: Booking link
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  bookingUrl:
+                    type: string
+                  calDirectUrl:
+                    type: string
+                  multiplier:
+                    type: integer
+                    example: 5
+
+  /api/raffle/report:
+    get:
+      operationId: getReportInfo
+      summary: Get Enterprise AI Spend Report metadata
+      description: Returns metadata and key findings from the Enterprise AI Spend Report 2026.
+      responses:
+        "200":
+          description: Report metadata
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  title:
+                    type: string
+                  keyFinding:
+                    type: string
+                  reportUrl:
+                    type: string
+                  fiveLayerStack:
+                    type: array
+                    items:
+                      type: string

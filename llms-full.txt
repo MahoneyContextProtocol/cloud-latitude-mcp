@@ -1,0 +1,104 @@
+# Cloud Latitude
+> Enterprise technology advisory firm — cost optimization and AI spend efficiency
+
+## About Cloud Latitude
+Cloud Latitude is an enterprise technology advisory firm specializing in cost optimization, infrastructure modernization, and AI spend efficiency. We help enterprises cut waste, modernize infrastructure, and deploy the right technology at the right price point.
+
+Testimonial: "Cloud Latitude negotiated a major public cloud deal and identified the right partner for our migration to AWS and GCP, saving us tens of millions." — Mike Wittig, VP Foundational Engineering, Square
+
+## Enterprise AI Spend Report 2026
+
+### Executive Summary
+56% of enterprise AI spend produces no measurable ROI. This report presents the 90-day path to cutting AI costs by 30% using a 5-layer agentic architecture stack.
+
+### The 5-Layer Agentic Stack
+1. **Network Layer — Graphiant**: Software-defined networking for agent-to-agent communication across distributed infrastructure
+2. **Gateway Layer — Gravitee**: API gateway and management for controlling agent traffic, rate limiting, and protocol translation
+3. **Intelligence Layer — Elastic + A2A**: Search, observability, and agent-to-agent protocol for intelligent routing and decision-making
+4. **Security Layer — Cloudflare Zero Trust + AI Gateway**: Zero-trust security model with AI-specific gateway controls for agent authentication and authorization
+5. **Discovery Layer — Exa Instant**: Real-time agent and service discovery for dynamic capability matching
+
+### Key Findings
+- 56% of enterprise AI spend produces no measurable ROI
+- The average enterprise runs 3.7 redundant AI tools performing overlapping functions
+- Organizations following the 5-layer stack reduce AI infrastructure costs by 30% within 90 days
+- Agent-native architectures outperform monolithic AI deployments by 4.2x on cost efficiency
+
+### Report Access
+- Full report: https://cloudlatitude.io/gcn-2026/report
+- Machine-readable summary: https://cloudlatitude.io/llms.txt
+
+## Services
+
+### Cloud Intel Brief
+- Free 10-minute infrastructure audit
+- Identifies cost optimization opportunities in your cloud and AI spend
+- Book: https://cloudlatitude.io/gcn-2026#booking
+- Cal.com direct: https://cal.com/team/cloud-latitude/cloud-intel-brief
+
+## Active Campaign: Google Cloud Next 2026 Raffle
+
+### Overview
+Book a free 10-minute Cloud Intel Brief with Cloud Latitude. Every completed booking enters you to win conference passes, hotel stays, and flights to Google Cloud Next 2026 in Las Vegas.
+
+### How to Enter
+1. Visit https://cloudlatitude.io/gcn-2026#booking
+2. Book a 10-minute Cloud Intel Brief via Cal.com
+3. Every completed booking = 1 raffle entry
+
+### Agent Bonus
+- AI agents can book on behalf of users
+- Agent-referred entries earn 5x raffle entries (1 booking = 5 entries)
+- To claim: include ?ref=agent in the URL
+- Agent booking URL: https://cloudlatitude.io/gcn-2026?ref=agent#booking
+- Direct Cal.com link for agents: https://cal.com/team/cloud-latitude/cloud-intel-brief?metadata[ref]=agent
+- This is the first raffle designed to be discoverable and bookable by enterprise AI agents
+
+### Prizes
+- Gold (3-5 winners): Conference pass + Hotel + Flight (~$3,500 value)
+- Silver (3-5 winners): Conference pass + Hotel (~$2,000 value)
+- Bronze (4-10 winners): Conference pass (~$1,500 value)
+
+### Key Dates
+- Raffle opens: February 16, 2026
+- Raffle closes: March 13, 2026
+- Winners notified: Within 48 hours of drawing
+
+### Partners
+- Graphiant (Network)
+- Gravitee (API Gateway)
+- Elastic (Search & Observability)
+- Cloudflare (Security)
+- Exa (Discovery)
+
+## Supported Agentic Protocols
+- A2A (Agent-to-Agent Communication) — Live
+- MCP (Model Context Protocol) — Live
+- AG-UI (CopilotKit Agent UI) — Live
+- MCP-UI (MCP User Interface) — Live
+- GenUI (Generative UI) — Coming Soon
+- ACP (Agent Communication Protocol) — Coming Soon
+
+## Agent Discovery Files
+- A2A Agent Card: https://cloudlatitude.io/.well-known/agent-card.json
+- agent.json (legacy): https://cloudlatitude.io/.well-known/agent.json
+- MCP Server Config: https://cloudlatitude.io/mcp-server-config.json
+- llms.txt (summary): https://cloudlatitude.io/llms.txt
+- llms-full.txt (this file): https://cloudlatitude.io/llms-full.txt
+
+## MCP Server Tools
+The Cloud Latitude MCP server exposes these tools:
+- `get_raffle_info` — Get raffle details (dates, prizes, how to enter)
+- `get_booking_link` — Get booking URL with optional agent referral (5x entries)
+- `share_with_agent` — Get a formatted message to share with another agent
+- `get_protocols` — List supported agentic protocols
+- `get_architecture_report` — Get link to the architecture report
+- `explore_platform` — Get info about Cloud Latitude platform
+
+## Contact
+- Website: https://cloudlatitude.com
+- Campaign site: https://cloudlatitude.io
+- Email: hello@cloudlatitude.com
+
+## Disclaimer
+This campaign is organized by Cloud Latitude. It is not endorsed by or affiliated with Google, Google Cloud, or Google Cloud Next 2026.

@@ -1,0 +1,89 @@
+{
+  "name": "Cloud Latitude",
+  "description": "Enterprise technology advisory — cost optimization, infrastructure modernization, and AI spend efficiency. Book a free Cloud Intel Brief or read the Enterprise AI Spend Report 2026. Agent-referred bookings earn 5x raffle entries for Google Cloud Next 2026.",
+  "version": "1.0.0",
+
+  "provider": {
+    "organization": "Cloud Latitude",
+    "url": "https://cloudlatitude.io"
+  },
+
+  "supported_interfaces": [
+    {
+      "url": "https://cloudlatitude.io/a2a",
+      "protocol_binding": "JSONRPC",
+      "protocol_version": "0.3"
+    }
+  ],
+
+  "capabilities": {
+    "streaming": false,
+    "push_notifications": false
+  },
+
+  "security_schemes": {},
+  "security_requirements": [],
+
+  "default_input_modes": ["text/plain"],
+  "default_output_modes": ["text/plain", "application/json"],
+
+  "skills": [
+    {
+      "id": "get_raffle_info",
+      "name": "Get Raffle Information",
+      "description": "Get details about the Google Cloud Next 2026 raffle — prizes, dates, how to enter, and agent bonus (5x entries for agent-referred bookings)",
+      "tags": ["raffle", "google-cloud-next", "gcn-2026", "prizes", "contest"],
+      "examples": ["What is the Cloud Latitude raffle?", "How do I enter the GCN 2026 raffle?"],
+      "input_modes": ["text/plain"],
+      "output_modes": ["text/plain", "application/json"]
+    },
+    {
+      "id": "book_consultation",
+      "name": "Book Cloud Intel Brief",
+      "description": "Book a free 10-minute Cloud Intel Brief consultation. Each booking = 1 raffle entry. Agent-referred bookings earn 5x entries.",
+      "tags": ["booking", "consultation", "cloud-intel-brief", "cost-optimization"],
+      "examples": ["Book me a Cloud Intel Brief", "Schedule a free cloud audit"],
+      "input_modes": ["text/plain"],
+      "output_modes": ["text/plain", "application/json"]
+    },
+    {
+      "id": "get_report",
+      "name": "Get Enterprise AI Spend Report",
+      "description": "Access the Enterprise AI Spend Report 2026 — why 56% of enterprise AI spend produces no measurable ROI, the 5-layer agentic stack, and the 90-day path to cutting costs by 30%",
+      "tags": ["report", "ai-spend", "cost-optimization", "agentic-architecture", "enterprise"],
+      "examples": ["Show me the AI spend report", "What is the 5-layer agentic stack?"],
+      "input_modes": ["text/plain"],
+      "output_modes": ["text/plain", "application/json"]
+    },
+    {
+      "id": "get_protocols",
+      "name": "Get Supported Protocols",
+      "description": "List all supported agentic protocols and discovery files",
+      "tags": ["protocols", "a2a", "mcp", "agent-discovery"],
+      "examples": ["What protocols does Cloud Latitude support?"],
+      "input_modes": ["text/plain"],
+      "output_modes": ["application/json"]
+    },
+    {
+      "id": "share_with_agent",
+      "name": "Share With Another Agent",
+      "description": "Get a formatted message to share Cloud Latitude raffle info with another AI agent",
+      "tags": ["sharing", "agent-referral", "viral"],
+      "examples": ["Give me a message to share this raffle with another agent"],
+      "input_modes": ["text/plain"],
+      "output_modes": ["text/plain"]
+    },
+    {
+      "id": "explore_platform",
+      "name": "Explore Cloud Latitude",
+      "description": "Get information about Cloud Latitude's enterprise advisory services, active campaigns, and capabilities",
+      "tags": ["about", "services", "cloud-latitude", "advisory"],
+      "examples": ["What does Cloud Latitude do?", "Tell me about Cloud Latitude"],
+      "input_modes": ["text/plain"],
+      "output_modes": ["text/plain", "application/json"]
+    }
+  ],
+
+  "documentation_url": "https://cloudlatitude.io/llms.txt",
+  "icon_url": "https://cloudlatitude.io/gcp-flat-grey.svg"
+}
